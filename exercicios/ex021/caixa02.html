@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+         ::selection {
+            background-color: lightcoral;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0;
+        }
+        
+        .titulo-menu {
+            text-align: center;
+            text-decoration: underline;
+        }
+        
+        .titulo-menu::before {
+            content: '👊';
+        }
+        
+        .titulo-menu::after {
+            content: '👊';
+        }
+        
+        header {
+            background-color: #fff;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px 0 0 0;
+        }
+        
+        nav.menu_principal {
+            background-color: darkgray;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 1px 7px 9px #00000080;
+        }
+        
+        nav.menu_principal>a {
+            text-decoration: none;
+            color: #000;
+            margin-right: 20px;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        
+        nav.menu_principal>a:hover {
+            color: lightgoldenrodyellow;
+            text-decoration: underline;
+        }
+        
+        nav.menu_principal>a:hover::before {
+            content: '💊';
+        }
+        
+        main {
+            background-color: #fff;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 0 0 5px 5px;
+            box-shadow: 1px 1px 5px 2px #00000080;
+        }
+        
+        article {
+            background-color: darkgray;
+            padding: 3px;
+            margin: 5px 0;
+        }
+        
+        article>aside {
+            background-color: lightgoldenrodyellow;
+            padding: 5px;
+        }
+        
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+        }
+        
+        footer>p {
+            margin: 0;
+            padding: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo-menu">Meu site</h1>
+        <nav class="menu_principal">
+            <a href="#">Item 1</a>
+            <a href="#">Item 2</a>
+            <a href="#">Item 3</a>
+            <a href="#">Item 4</a>
+            <a href="#">Item 5</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre a Nicaragua</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque eius tempora deserunt explicabo. Consequuntur nobis nam explicabo cumque, ex ad deserunt nostrum rem, voluptate fugit quo totam rerum doloremque amet.</p>
+                <aside>
+                    <p>Artigo escrito por Isaac Martinez</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, fugiat. Et sit, eum consectetur maxime quod veritatis dolorum quos ab! Dolorum voluptatibus impedit aperiam sit quo. Laborum exercitationem magnam libero.</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Noticias sobre Tecnologia</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam libero consequuntur tempora ullam qui architecto praesentium vel beatae ab dolores, animi, quam ad labore minima nisi! Amet architecto quidem delectus!</p>
+                <nav>
+                    <a href="#">Facebook</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Facebook</a>
+                </nav>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Desenvolvido pelo Isaac Martinez</p>
+    </footer>
+</body>
+
+</html>

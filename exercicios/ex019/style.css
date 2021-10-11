@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+/*
+^ em html é id = css #
+^ em html é class = css .
+*/
+
+::selection {
+    background: rgb(244, 253, 204);
+}
+
+body {
+    background-color: rgb(218, 247, 224);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #012709;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: yellowgreen;
+    text-decoration: none;
+    color: #012709;
+    padding: 5px;
+}
+
+h2 {
+    color: rgb(10, 85, 25);
+}
+
+.basico {
+    background-color: #c0cfa3;
+    padding: 5px 2px;
+    font-weight: bold;
+}
+
+.intermediario {
+    background-color: #bbce92;
+    font-weight: bold;
+}
+
+.avancado {
+    background-color: #b3ca81;
+    font-weight: bold;
+}
+
+p {
+    padding: 0 20px 0 20px;
+    text-align: justify;
+}

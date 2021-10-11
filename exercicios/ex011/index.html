@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+
+<body>
+    <h1>Imgem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplemente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <!-- carga la imagen pequenha asta el tamano 750px -->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <!-- carga la imagen mediana asta el tamano 1050px -->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <!-- 1000 el tamanho de la imagen y 50 porque sale la barra -->
+        <!-- carga la grande si el tamanho es mayor a 1050px -->
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir audios em html5</p>
+    <!-- formatos: mp3 - wav - ogg -->
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu nagevador nao consegue reproduzir audios <a href="midia/guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mpeg">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+
+</body>
+
+</html>
