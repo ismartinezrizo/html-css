@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posicao dos Fundos</title>
+  <style>
+    div.bloco{
+      height: 200px;
+      border: 1px solid #000;
+      border-radius: 10px;
+      margin: 10px;
+      background-image: url('./imagens/wallpaper003.jpg');
+    }
+
+    div#cuadro1{
+      background-position: left top;/*por defecto*/
+    }
+    div#cuadro2{
+      background-position: left center;
+    }
+
+    div#cuadro3{
+      background-position: right bottom;
+    }
+
+    div#cuadro4{
+      background-position: center center;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="bloco" id="cuadro1"></div>
+  <div class="bloco" id="cuadro2"></div>
+  <div class="bloco" id="cuadro3"></div>
+  <div class="bloco" id="cuadro4"></div>
+  
+</body>
+</html>
