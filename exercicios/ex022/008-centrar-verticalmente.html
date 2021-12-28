@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            position: relative;
+            height: 500px;           
+            background-color: #0D9CA3;
+            background-image: url('./imagens/target001.png');
+            background-size: 100% 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            padding: 10px;
+        }
+
+        #conteudo{
+            position: absolute;
+            left: 50%;
+            top: 50%;            
+            height: 200px;
+            width: 400px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.342);
+            /* background-image: url('./imagens/target001.png');
+            background-size: 100% 100%;
+            background-position: center center; */
+            background-color: #F16000;
+            margin: auto;  
+            /* mueve el primero parametro es el eje de las X y el segundo eje Y */
+            transform: translate(-50%,-50%);          
+        }
+        
+      
+    </style>
+</head>
+<body>
+    <div id="container">
+        <article id="conteudo">
+
+        </article>
+    </div>
+</body>
+</html>
