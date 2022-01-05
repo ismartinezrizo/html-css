@@ -1,5 +1,21 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: PassionOne;
+    src: url('../fonts/PassionOne-Regular.ttf') format(truetype);
+}
+@font-face {
+    font-family: Sriracha;
+    src: url('../fonts/Sriracha-Regular.ttf') format(truetype);
+}
+
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: PassionOne, cursive;
+    --fonte3: Sriracha, cursive;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +23,8 @@
 
 html,body{
     min-height: 100vh;
-    background-color: lightgrey;
+    background-color: lightgrey; 
+    font-family: var(--fonte1);
 }
 
 header{
@@ -21,6 +38,8 @@ header > h1{
     /* text-transform: uppercase; */
     /* mejor con font-variant */
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 7vw;
 }
 
 header a, footer a{
@@ -36,8 +55,10 @@ header a:hover, footer a:hover{
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
+    line-height: 2;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
 section.normal{
@@ -51,7 +72,7 @@ section.imagem{
 }
 
 section.imagem > p{
-    width: 400px;
+    display: inline-block;
     background-color: rgba(0, 0, 0,.20);
     color: #fff;
     padding: 10px;
