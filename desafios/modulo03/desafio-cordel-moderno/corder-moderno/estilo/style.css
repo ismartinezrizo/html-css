@@ -58,7 +58,11 @@ section{
     line-height: 2;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 3.5vw;
+    font-size: 3vw;
+}
+
+section > p{
+    padding-bottom: 2em;
 }
 
 section.normal{
@@ -67,8 +71,21 @@ section.normal{
 }
 
 section.imagem{
-    background-color: #333232;
+    background-color: #333232;    
     color: #fff;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.5);
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
 }
 
 section.imagem > p{
@@ -77,6 +94,7 @@ section.imagem > p{
     color: #fff;
     padding: 10px;
     border-radius: 10px;
+    text-shadow: 2px 2px 0 #000;
 }
 
 
