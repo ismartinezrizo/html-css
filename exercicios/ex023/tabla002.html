@@ -13,6 +13,13 @@
     table{
       width: 500px;
       border-collapse: collapse;
+      position: relative;
+    }
+
+    thead > tr > th{
+      position: sticky;
+      top: -1px;
+      background-color: #383838;
     }
     
     caption{
@@ -23,9 +30,24 @@
     }
 
     thead, tfoot{
-      background-color: gray;
+      background-color: #383838;
       color: #fff;
     }
+
+    /* 2n de dos en dos */
+    tbody > tr:nth-child(2n){
+      background-color: lightgrey;
+    }
+
+    /* impares odd es igual a = 2n -1 */
+    /* tbody > tr:nth-child(odd){   
+      background-color: lightgray;
+    } */
+
+    /* pares even es igual a = 2n */
+    /* tbody > tr:nth-child(even){ 
+      background-color: lightgreen;
+    } */
 
     th, td{
       border: 1px solid #000;
@@ -125,6 +147,42 @@
         <td>Piauí</td>
         <td class="num">3 198 185</td>
       </tr>     
+      <tr>
+        <td>Piauí</td>
+        <td class="num">3 198 185</td>
+      </tr>
+      <tr>
+        <td>Piauí</td>
+        <td class="num">3 198 185</td>  
+      </tr>     
+      <tr>
+        <td>Piauí</td>
+        <td class="num">3 198 185</td>
+      </tr>
+      <tr>
+        <td>Piauí</td>
+        <td class="num">3 198 185</td>
+      </tr>     
+      <tr>
+        <td>Piauí</td>
+        <td class="num">3 198 185</td>
+      </tr>     
+      <tr>
+        <td>Piauí</td>
+        <td class="num">3 198 185</td>
+      </tr>
+      <tr>
+        <td>Piauí</td>
+        <td class="num">3 198 185</td>
+      </tr>     
+      <tr>
+        <td>Piauí</td>
+        <td class="num">3 198 185</td>
+      </tr>
+      <tr>
+        <td>Piauí</td>
+        <td class="num">3 198 185</td>
+      </tr>     
     </tbody>
     <tfoot>
       <tr>
@@ -133,5 +191,15 @@
       </tr>
     </tfoot>
   </table>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus maiores quod at corrupti, est dolorum quae explicabo atque, eum voluptatem, et dolores ad minima distinctio excepturi officia fugiat tenetur reprehenderit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quae nihil debitis vero, aut, vel commodi laborum impedit, quo sint minima id. Iusto facilis repellendus, rerum eaque ipsum cumque non Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos accusamus sapiente sed tempora eos quod minima harum expedita voluptatibus necessitatibus magni illum doloribus, mollitia ex ipsam nihil, deleniti officia.ctetur adipisicing elit. Facere quae nihil debitis vero, aut, vel commodi laborum impedit, quo sint minima id. Iusto facilis repellendus, rerum eaque ipsum cumque non Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos accusamus sapiente sed tempora eos quod minima harum expedita voluptatibus necessitatibus magni illum doloribus, mollitia ex ipsam nihil, deleniti officia.ctetur adipisicing elit. Facere quae nihil debitis vero, aut, vel commodi laborum impedit, quo sint minima id. Iusto facilis repellendus, rerum eaque ipsum cumque non Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos accusamus sapiente sed tempora eos quod minima harum expedita voluptatibus necessitatibus magni illum doloribus, mollitia ex ipsam nihil, deleniti officia.ctetur adipisicing elit. Facere quae nihil debitis vero, aut, vel commodi laborum impedit, quo sint minima id. Iusto facilis repellendus, rerum eaque ipsum cumque non Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos accusamus sapiente sed tempora eos quod minima harum expedita voluptatibus necessitatibus magni illum doloribus, mollitia ex ipsam nihil, deleniti officia.</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus maiores quod at corrupti, est dolorum quae explicabo atque, eum voluptatem, et dolores ad minima distinctio excepturi officia fugiat tenetur reprehenderit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quae nihil debitis vero, aut, vel commodi laborum impedit, quo sint minima id. Iusto facilis repellendus, rerum eaque ipsum cumque non Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos accusamus sapiente sed tempora eos quod minima harum expedita voluptatibus necessitatibus magni illum doloribus, mollitia ex ipsam nihil, deleniti officia.ctetur adipisicing elit. Facere quae nihil debitis vero, aut, vel commodi laborum impedit, quo sint minima id. Iusto facilis repellendus, rerum eaque ipsum cumque non Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos accusamus sapiente sed tempora eos quod minima harum expedita voluptatibus necessitatibus magni illum doloribus, mollitia ex ipsam nihil, deleniti officia.ctetur adipisicing elit. Facere quae nihil debitis vero, aut, vel commodi laborum impedit, quo sint minima id. Iusto facilis repellendus, rerum eaque ipsum cumque non Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos accusamus sapiente sed tempora eos quod minima harum expedita voluptatibus necessitatibus magni illum doloribus, mollitia ex ipsam nihil, deleniti officia.ctetur adipisicing elit. Facere quae nihil debitis vero, aut, vel commodi laborum impedit, quo sint minima id. Iusto facilis repellendus, rerum eaque ipsum cumque non Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos accusamus sapiente sed tempora eos quod minima harum expedita voluptatibus necessitatibus magni illum doloribus, mollitia ex ipsam nihil, deleniti officia.</p>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus maiores quod at corrupti, est dolorum quae explicabo atque, eum voluptatem, et dolores ad minima distinctio excepturi officia fugiat tenetur reprehenderit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quae nihil debitis vero, aut, vel commodi laborum impedit, quo sint minima id. Iusto facilis repellendus, rerum eaque ipsum cumque non Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos accusamus sapiente sed tempora eos quod minima harum expedita voluptatibus necessitatibus magni illum doloribus, mollitia ex ipsam nihil, deleniti officia.ctetur adipisicing elit. Facere quae nihil debitis vero, aut, vel commodi laborum impedit, quo sint minima id. Iusto facilis repellendus, rerum eaque ipsum cumque non Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos accusamus sapiente sed tempora eos quod minima harum expedita voluptatibus necessitatibus magni illum doloribus, mollitia ex ipsam nihil, deleniti officia.ctetur adipisicing elit. Facere quae nihil debitis vero, aut, vel commodi laborum impedit, quo sint minima id. Iusto facilis repellendus, rerum eaque ipsum cumque non Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos accusamus sapiente sed tempora eos quod minima harum expedita voluptatibus necessitatibus magni illum doloribus, mollitia ex ipsam nihil, deleniti officia.ctetur adipisicing elit. Facere quae nihil debitis vero, aut, vel commodi laborum impedit, quo sint minima id. Iusto facilis repellendus, rerum eaque ipsum cumque non Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos accusamus sapiente sed tempora eos quod minima harum expedita voluptatibus necessitatibus magni illum doloribus, mollitia ex ipsam nihil, deleniti officia.</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus maiores quod at corrupti, est dolorum quae explicabo atque, eum voluptatem, et dolores ad minima distinctio excepturi officia fugiat tenetur reprehenderit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quae nihil debitis vero, aut, vel commodi laborum impedit, quo sint minima id. Iusto facilis repellendus, rerum eaque ipsum cumque non Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos accusamus sapiente sed tempora eos quod minima harum expedita voluptatibus necessitatibus magni illum doloribus, mollitia ex ipsam nihil, deleniti officia.ctetur adipisicing elit. Facere quae nihil debitis vero, aut, vel commodi laborum impedit, quo sint minima id. Iusto facilis repellendus, rerum eaque ipsum cumque non Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos accusamus sapiente sed tempora eos quod minima harum expedita voluptatibus necessitatibus magni illum doloribus, mollitia ex ipsam nihil, deleniti officia.ctetur adipisicing elit. Facere quae nihil debitis vero, aut, vel commodi laborum impedit, quo sint minima id. Iusto facilis repellendus, rerum eaque ipsum cumque non Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos accusamus sapiente sed tempora eos quod minima harum expedita voluptatibus necessitatibus magni illum doloribus, mollitia ex ipsam nihil, deleniti officia.ctetur adipisicing elit. Facere quae nihil debitis vero, aut, vel commodi laborum impedit, quo sint minima id. Iusto facilis repellendus, rerum eaque ipsum cumque non Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos accusamus sapiente sed tempora eos quod minima harum expedita voluptatibus necessitatibus magni illum doloribus, mollitia ex ipsam nihil, deleniti officia.</p>
+
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus maiores quod at corrupti, est dolorum quae explicabo atque, eum voluptatem, et dolores ad minima distinctio excepturi officia fugiat tenetur reprehenderit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quae nihil debitis vero, aut, vel commodi laborum impedit, quo sint minima id. Iusto facilis repellendus, rerum eaque ipsum cumque non Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos accusamus sapiente sed tempora eos quod minima harum expedita voluptatibus necessitatibus magni illum doloribus, mollitia ex ipsam nihil, deleniti officia.ctetur adipisicing elit. Facere quae nihil debitis vero, aut, vel commodi laborum impedit, quo sint minima id. Iusto facilis repellendus, rerum eaque ipsum cumque non Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos accusamus sapiente sed tempora eos quod minima harum expedita voluptatibus necessitatibus magni illum doloribus, mollitia ex ipsam nihil, deleniti officia.ctetur adipisicing elit. Facere quae nihil debitis vero, aut, vel commodi laborum impedit, quo sint minima id. Iusto facilis repellendus, rerum eaque ipsum cumque non Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos accusamus sapiente sed tempora eos quod minima harum expedita voluptatibus necessitatibus magni illum doloribus, mollitia ex ipsam nihil, deleniti officia.ctetur adipisicing elit. Facere quae nihil debitis vero, aut, vel commodi laborum impedit, quo sint minima id. Iusto facilis repellendus, rerum eaque ipsum cumque non Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos accusamus sapiente sed tempora eos quod minima harum expedita voluptatibus necessitatibus magni illum doloribus, mollitia ex ipsam nihil, deleniti officia.</p>
+  
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus maiores quod at corrupti, est dolorum quae explicabo atque, eum voluptatem, et dolores ad minima distinctio excepturi officia fugiat tenetur reprehenderit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quae nihil debitis vero, aut, vel commodi laborum impedit, quo sint minima id. Iusto facilis repellendus, rerum eaque ipsum cumque non Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos accusamus sapiente sed tempora eos quod minima harum expedita voluptatibus necessitatibus magni illum doloribus, mollitia ex ipsam nihil, deleniti officia.ctetur adipisicing elit. Facere quae nihil debitis vero, aut, vel commodi laborum impedit, quo sint minima id. Iusto facilis repellendus, rerum eaque ipsum cumque non Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos accusamus sapiente sed tempora eos quod minima harum expedita voluptatibus necessitatibus magni illum doloribus, mollitia ex ipsam nihil, deleniti officia.ctetur adipisicing elit. Facere quae nihil debitis vero, aut, vel commodi laborum impedit, quo sint minima id. Iusto facilis repellendus, rerum eaque ipsum cumque non Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos accusamus sapiente sed tempora eos quod minima harum expedita voluptatibus necessitatibus magni illum doloribus, mollitia ex ipsam nihil, deleniti officia.ctetur adipisicing elit. Facere quae nihil debitis vero, aut, vel commodi laborum impedit, quo sint minima id. Iusto facilis repellendus, rerum eaque ipsum cumque non Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quos accusamus sapiente sed tempora eos quod minima harum expedita voluptatibus necessitatibus magni illum doloribus, mollitia ex ipsam nihil, deleniti officia.</p>
 </body>
 </html>
