@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio de tabla</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    table{
+      border-collapse: collapse;
+      width: 700px;
+    }
+
+    caption{
+      background-color: lightgray;
+      padding: 5px;
+      font-weight: bold;
+      border: 1px solid #000;
+      border-bottom: none;
+      text-transform: uppercase;     
+    }
+
+    
+    th{
+      background-color: lightgoldenrodyellow;
+    }
+
+    th, td{
+      border: 1px solid #000;
+      padding: 10px;
+    }
+    
+    .verde{
+      background-color: lightgreen;
+    }
+
+    .gris{
+      background-color: lightgray;
+    }
+
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Insertar</caption>
+    <colgroup>
+      <col class="verde">
+      <col class="gris" span="2">      
+      <col class="verde">
+    </colgroup>
+    <thead>
+      <th scope="col">Nombre</th>
+      <th scope="col">Sexo</th>
+      <th scope="col">Edad</th>
+      <th scope="col">Profesion</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ana Maria</td>
+        <td>F</td>
+        <td>25</td>
+        <td>Periodista</td>
+      </tr>
+      <tr>
+        <td>Isaac Martinez</td>
+        <td>M</td>
+        <td>31</td>
+        <td>Programador web</td>
+      </tr>
+      <tr>
+        <td>Ashley Quitania</td>
+        <td>M</td>
+        <td>19</td>
+        <td>Estudiante</td>
+      </tr>
+      <tr>
+        <td>Isaura Herrera</td>
+        <td>F</td>
+        <td>33</td>
+        <td>Secretaria</td>
+      </tr>
+      <tr>
+        <td>Gustavo Guanabara</td>
+        <td>M</td>
+        <td>35</td>
+        <td>Profesor de Informatica</td>
+      </tr>
+    </tbody>
+  </table>
+  
+</body>
+</html>
