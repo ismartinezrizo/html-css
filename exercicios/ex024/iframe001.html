@@ -7,9 +7,28 @@
   <title>Iframe001</title>
 </head>
 <body>
-  <h1>Probando el uso de iframe</h1>
-  <p>Ingresando al curso de <iframe src="https://www.cursoemvideo.com/" frameborder="0"></iframe> para aprender a programar</p>
+  <h1>Probando el uso de iframe, tamaño por defecto: 300x150</h1>
+  <hr>
+  <p>Ingresando al curso de 
+    <iframe src="https://www.cursoemvideo.com/" frameborder="0" height="500" scrolling="auto">
+      <!-- sino es compatible muestra el link -->
+      <a href="https://www.cursoemvideo.com/" target="_blank">Curso em video</a>
+    </iframe> para aprender a programar</p>
+  <hr>
   <!-- algunos sitios no permite que usemos uso de iframe, por la seguridad -->
-  <p>Sitio de es muy bonito <iframe src="https://www.google.com/" frameborder="0"></iframe></p>
+  <p>Sitio de es muy bonito 
+    <iframe src="https://www.google.com/" frameborder="0" scrolling="yes">
+      <!-- sino es compatible muestra el link -->
+      <a href="https://www.google.com/" target="_blank">Google.com</a>
+    </iframe>
+  </p>
+  <hr>
+  <p>Repositorio de Guanabara 
+    <iframe src="https://gustavoguanabara.github.io" frameborder="0" width="500" height="500" scrolling="no">
+      <!-- sino es compatible muestra el link -->
+      <a href="https://gustavoguanabara.github.io" target="_blank"Gustavo Guanabara</a>
+    </iframe>
+  </p>
+  <hr>
 </body>
 </html>
