@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prueba de formulario</title>
+</head>
+<body>
+  <form action="#" method="get" autocomplete="on">
+    <p>
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre" placeholder="Nombre completo" required maxlength="30" autocomplete="name">
+    </p>
+
+    <p>
+      <label for="media">Media</label>
+      <!-- step="0.1" para que acepte los decimales -->
+      <input type="number" name="media" id="media" min="0" max="10" step="0.1" required placeholder="0 a 10">
+    </p>
+
+    <p>
+      <label for="periodo">Periodo Electivo</label>
+      <input type="month" name="periodo" id="periodo" value="2022-08">
+    </p>
+
+    <p>
+      <label for="prueba">Dia de la Prueba</label>
+      <input type="date" name="prueba" id="prueba" value="2022-08-27">
+    </p>
+
+    <p>
+      <label for="hora">Horario de la prueba</label>
+      <input type="time" name="hora" id="hora">
+    </p>
+
+
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpiar">
+    </p>
+
+  </form>
+</body>
+</html>
