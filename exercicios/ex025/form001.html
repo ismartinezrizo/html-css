@@ -13,10 +13,16 @@
 </head>
 <body>
   <h1>Mi primer Formulario</h1>
-  <form>
-    <p>Nombre: <input type="text" name="nombre" id="nombre"></p>
-    <p>Sobrenombre: <input type="text" name="sobrenombre" id="sobrenombre"></p>
-    <p><input type="submit" value="Enviar"></p>
+  <form autocomplete="off" action="registro.php" method="POST">
+    <p><label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre">
+    </p>
+    <p><label for="sobrenombre">Sobrenombre:</label>
+      <input type="text" name="sobrenombre" id="sobrenombre">
+    </p>
+    <p>
+      <input type="submit" value="Enviar">
+    </p>
   </form>
 </body>
 </html>
