@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select, datalist e textarea em HTML</title>
+</head>
+<body>
+  <form action="#" method="post" autocomplete="on">
+    <p>
+      <label for="paises">Paises</label>
+      <select name="paises" id="paises">
+        <option value="" selected disabled>--- Selecciones un pais ---</option>
+        <optgroup label="Continente Americano">
+          <option value="br">Brasil</option>
+          <option value="me">Mexico</option>
+          <option value="eu">Estados unidos</option>
+          <option value="ni">Nicaragua</option>
+        </optgroup>
+        <optgroup label="Continente Europeo">
+          <option value="es">España</option>
+          <option value="por">Portugal</option>
+          <option value="in">Inglaterra</option>
+          <option value="ita">Italia</option>
+        </optgroup>
+      </select>
+    </p>
+    
+    <p>
+      <label for="profesion">Profesion</label>
+      <input type="text" placeholder="Profesion" name="profesion" id="profesion" list="listaProfesion">
+      <datalist id="listaProfesion">
+        <option>Administrador</option>
+        <option>Contador</option>
+        <option>Programador</option>
+        <option>Profesor</option>
+      </datalist>
+    </p>
+
+    <p>
+      <label for="mensaje">Mensaje</label><br>
+      <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="---Digite su mensaje aqui---"></textarea>
+    </p>
+
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpiar">
+    </p>
+
+  </form>
+</body>
+</html>
