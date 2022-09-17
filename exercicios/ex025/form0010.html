@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elemento output em formulários HTML III</title>
+</head>
+<body>
+  <form action="#" method="get">
+
+    <p>
+      <label for="ano">En que año nacistes?</label>
+      <input type="number" name="ano" id="ano" min="1900" max="2022" value="2000" oninput="calcularEdad()">
+    </p>
+    <p>
+      <label for="edad">Tu edad es: </label>
+      <output id="edad">0</output> Anos
+    </p>
+
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpiar">
+    </p>
+  </form>
+
+  <script>
+    function calcularEdad(){ 
+      let fechaActual = new Date().getFullYear();    
+      edad.innerHTML = fechaActual - Number(ano.value)
+    }
+  </script>
+
+</body>
+</html>
