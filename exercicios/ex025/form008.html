@@ -7,6 +7,25 @@
   <title>Elemento output em formulários HTML</title>
 </head>
 <body>
+  <form action="#" method="get">
+    <p>
+      <label for="numero1">Numero 1:</label>
+      <input type="number" name="numero1" id="numero1" min="0" max="50" required oninput="suma.innerHTML = Number(numero1.value) + Number(numero2.value)">
+    </p>
+    <p>
+      <label for="numero2">Numero 2:</label>
+      <input type="number" name="numero2" id="numero2" min="0" max="50" required oninput="suma.innerHTML = Number(numero1.value) + Number(numero2.value)">
+    </p>
+    <p>
+      <label for="suma">Suma: </label>
+      <output id="suma" name="suma">0</output>
+    </p>
+
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpiar">
+    </p>
+  </form>
   
 </body>
 </html>
